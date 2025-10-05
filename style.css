@@ -1,0 +1,122 @@
+/* style.css */
+
+/* Header with avatar */
+
+.container {
+  display: flex;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* keeps center content in middle */
+  position: relative; /* allows absolute positioning of left avatar if needed */
+  padding: 2rem 1rem;
+}
+
+.header-left {
+  position: absolute;
+  left: 1rem; /* puts avatar to left */
+}
+
+.header-left .avatar {
+  width: 200px; /* adjust size */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #004080;
+}
+
+.header-center {
+  text-align: center;
+}
+
+.header-text h1 {
+  margin: 0.2rem 0;
+  font-size: 2rem;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #004080;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0.2rem 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+nav {
+  background: #0066cc;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  border-bottom: 2px solid #004080;
+  padding-bottom: 0.3rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+  margin-bottom: 2px;
+}
+
+ul p {
+  margin: 0.2rem 0;
+}
+
+ol {
+  padding-left: 1.2rem;
+  margin-bottom: 2px;
+}
+
+ol p {
+  margin: 0.2rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  font-size: 0.9rem;
+  color: #555;
+}
