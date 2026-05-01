@@ -8,33 +8,16 @@
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <div class="header-left">
-            <img src="profile.png" alt="Kaixuan Ji" class="avatar">
-        </div>
-        <div class="header-center">
-            <h1>Kaixuan Ji</h1>
-            <p>Ph.D. Student in Computer Science, University of California, Los Angeles</p>
-            <p>
-                <a href="https://scholar.google.com/citations?user=FOoKDukAAAAJ&hl=en" target="_blank", style="color: antiquewhite;">Google Scholar</a> |
-                <a href="mailto:kaixuanji@cs.ucla.edu" target="_blank", style="color: antiquewhite;">Email</a> |
-                <a href="Resume_Kaixuan_Ji.pdf" target="_blank", style="color: antiquewhite;">Resume</a>
-                <!-- Email: <a href="mailto:kaixuanji@cs.ucla.edu> -->
-            </p>
-        </div>
-    </div>
-</header>
-
-<nav>
-  <a href="index.html">About</a>
-  <a href="publication.html">Publications</a>
-  <a href="misc.html">Miscellaneous</a>
-</nav>
+<div id="site-header"></div>
+<script>
+  fetch('header.html').then(r => r.text()).then(html => {
+    document.getElementById('site-header').innerHTML = html;
+  });
+</script>
 
 <section id="about">
   <h2>About</h2>
-  <p>Hi! I’m Kaixuan Ji, a third-year Ph.D. student in Computer Science at UCLA, fortunately advised by Professor <a href="https://web.cs.ucla.edu/~qgu/">Quanquan Gu</a>. Before coming to UCLA, I completed my undergraduate studies in Department of Computer Science and Technology at Tsinghua University, where I was fortunate to worked with Professors <a href="https://keg.cs.tsinghua.edu.cn/jietang/">Jie Tang</a> and <a href="https://keg.cs.tsinghua.edu.cn/persons/ljz/">Juanzi Li</a>. My current research explores reinforcement learning theory and its role in training large language models.</p>
+  <p>Hi! I’m Kaixuan Ji, a third-year Ph.D. student in Computer Science at UCLA, fortunately advised by Professor <a href="https://web.cs.ucla.edu/~qgu/">Quanquan Gu</a>. Before coming to UCLA, I completed my undergraduate studies in Department of Computer Science and Technology at Tsinghua University, where I was fortunate to work with Professors <a href="https://keg.cs.tsinghua.edu.cn/jietang/">Jie Tang</a> and <a href="https://keg.cs.tsinghua.edu.cn/persons/ljz/">Juanzi Li</a>. My current research explores reinforcement learning theory and its role in training large language models.</p>
 </section>
 
 <section id="research">
@@ -53,10 +36,10 @@
   <h4>Reinforcement Learning for Large Language Models</h4>
   <ul>
     <li> <p> <a href="https://arxiv.org/abs/2402.09401">Reinforcement Learning from Human Feedback with Active Queries</a> 
-        <br> Kaixuan Ji*, Jiafan He*, Quanquan Gu, <i>TMLR</i> 2025, <font color="red">Featured Certification</font> </p>
+        <br> Kaixuan Ji*, Jiafan He*, Quanquan Gu, <i>TMLR</i>, <font color="red">Featured Certification</font> </p>
     </li>
     <li> <p> <a href="https://arxiv.org/abs/2405.00675">Self-play Preference Optimization for Language Model Alignment</a> 
-        <br>Yue Wu*, Zhiqing Sun*, Huizhuo Yuan*, Kaixuan Ji, Yiming Yang, Quanquan Gu, <i>ICLR</i> 2025, </p>
+        <br>Yue Wu*, Zhiqing Sun*, Huizhuo Yuan*, Kaixuan Ji, Yiming Yang, Quanquan Gu, <i>ICLR</i> 2025 </p>
     </li>
   </ul>
 
