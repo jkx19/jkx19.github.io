@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching | Kaixuan Ji</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+<script>
+  fetch('header.html').then(r => r.text()).then(html => {
+    document.getElementById('site-header').innerHTML = html;
+  });
+</script>
+
+<section id="teaching">
+  <h2>Teaching Experiences</h2>
+  I was fortunate to be a teaching assistant (TA) for the following courses at UCLA:
+  <ul>
+    <li>CS35L (Software Construction): Fall 2024, Winter 2024, Spring 2025, Fall 2025</li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2025 Kaixuan Ji. All rights reserved.
+</footer>
+
+</body>
+</html>
