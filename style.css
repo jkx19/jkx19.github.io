@@ -79,6 +79,22 @@ header p {
   font-size: 1.1rem;
 }
 
+.header-links {
+  margin-top: 0.5rem;
+}
+
+.header-links a {
+  color: antiquewhite;
+  font-size: 1.6rem;
+  margin: 0 0.35rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.header-links a:hover {
+  opacity: 0.75;
+}
+
 nav {
   background: #0066cc;
   text-align: center;
